@@ -22,8 +22,7 @@
 			$.ajax({
 				url:"./print_target.html"
 				,success:function(rs){
-					shell.contentDocument.body.innerHTML = rs;
-					shell.contentWindow.print();
+					printHtml(rs)
 
 				}
 				,error:function(rs){
@@ -31,6 +30,28 @@
 				}
 			})
 		})
+
+		//新建一个iframe元素，并修改它的document
+		function printHtml(rs) {
+			var iframe = document.createElement("iframe");
+
+			document.body.append(iframe);
+
+			iframe.setAttribute("style","position:fixed;height:0px;width0px;top:-500px;")
+
+			var _window = iframe.contentWindow
+			,_doc = iframe.contentDocument;
+
+			_doc.body.innerHTML = rs;
+
+			
+
+			_window.print();
+
+			document.body.removeChild(iframe);
+
+
+		}
 	</script>
 </body>
 </html>
