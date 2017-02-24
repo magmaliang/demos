@@ -29,7 +29,6 @@ module.exports = {
     }
     ,debug:true
     ,plugins: [_cp,new webpack.HotModuleReplacementPlugin()]
-    // ,debug: options.debug
 }
 
 // .
