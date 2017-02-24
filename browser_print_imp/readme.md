@@ -26,5 +26,5 @@ shell.contentWindow.print();
 
 一个html中只能存在一个html、一个body元素。
 
-当在A的body中插入一个新的html时，浏览器会取出基中除了html、body元素之外的所有元素放在A的body中。——这个默认行为chrome42和ie10下得到证实，其他版本未知。
+当在A的body中插入一个新的html B时，浏览器会取出B html中除了html、body元素之外的所有元素放在A的body中。——这个默认行为chrome42和ie10下得到证实，其他版本未知。
 
