@@ -1,14 +1,13 @@
 {
-  "name": "simpleblog",
+  "name": "webpack-dev-server-config-demo",
   "version": "1.0.0",
-  "description": "a blog system with php",
+  "description": "webpack-dev-server-config-demo",
   "main": "index.js",
   "scripts": {
-    "build": "rm -f ./release/* && webpack --config ./entry.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --config --inline ./webpack/app_webpack.config.js"
+    "start": "webpack-dev-server --config ./webpack.config.js & open http://localhost:9998/index.html"
   },
-  "author": "magmaliang@qq.com",
+  "author": "magmaliang@gmail.com",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.18.0",
@@ -19,6 +18,7 @@
     "babel-preset-stage-0": "^6.16.0",
     "copy-webpack-plugin": "^3.0.1",
     "css-loader": "^0.25.0",
+    "glob": "^7.1.1",
     "html-loader": "^0.4.4",
     "jquery": "^3.1.1",
     "react": "^15.0.1",
@@ -26,6 +26,7 @@
     "react-redux": "",
     "requirejs": "^2.3.2",
     "style-loader": "^0.13.1",
+    "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
   }
 }

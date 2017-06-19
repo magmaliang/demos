@@ -1,0 +1,11 @@
+{
+    "projectAB": {
+        "components": ["cmpa", "cmpb"]
+    },
+    "projectB": {
+        "components": ["cmpb"]
+    },
+    "options": {
+        "path": "./src/cmps/"
+    }
+}
