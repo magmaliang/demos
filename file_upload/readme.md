@@ -39,3 +39,13 @@ npm install
 
 npm start;
 ```
+
+## 设计
+
+### 兼容性
+
+要想写好一个上传组件不是一件容易的事。FormData上传较简单，使用form上传后默认行为是跳页。
+
+习惯上在form内部隐藏一个iframe，将form的target设置成此iframe,则form上传完成后会将内容输入此iframe——以此阻止跳页。
+
+### 上传进度

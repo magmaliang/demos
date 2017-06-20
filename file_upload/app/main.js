@@ -8,6 +8,15 @@ var opt = {
 	,callback:function(data){console.log(data)}
 }
 
+// stop default load localfile of browser
+window.addEventListener("dragover",function(e){
+  e = e || event;
+  e.preventDefault();
+},false);
+window.addEventListener("drop",function(e){
+  e = e || event;
+  e.preventDefault();
+},false);
 
 render(
 	<FileUpload {...opt} />, $(".container")[0]

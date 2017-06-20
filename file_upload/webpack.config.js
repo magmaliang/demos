@@ -2,6 +2,9 @@ var _loaders = [{
 		test: /\.css$/,
 		loader: 'style-loader!css-loader'
 	}, {
+		test: /\.scss$/,
+		loader: 'style-loader!css-loader!sass-loader'
+	}, {
 		test: /\.js[x]?$/,
 		exclude: /node_modules/,
 		loaders:['babel-loader?presets[]=es2015,presets[]=react,presets[]=stage-0'] 
