@@ -10,6 +10,5 @@ var opt = {
 
 
 render(
-	<FileUpload {...opt} />,$(".container")[0]
+	<FileUpload {...opt} />, $(".container")[0]
 	)
-// $("body").append(fileUpload);

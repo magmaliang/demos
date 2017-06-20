@@ -2,3 +2,5 @@
 *.DS_Store
 */release/
 */build/
+*/.DS_Store
+*/yarn.lock
