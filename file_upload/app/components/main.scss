@@ -1,4 +1,4 @@
-.file_upload {
+.drag_zone {
 	.upload_button {
 		border: 1px solid #ddd;
 		padding: 5px;
@@ -16,5 +16,12 @@
 	.tip {
 		color: #ddd;
 		cursor: pointer;
+	}
+}
+
+.files_previewer {
+	.upload_progress {
+		height: 10px;
+		background: #0f0;
 	}
 }
